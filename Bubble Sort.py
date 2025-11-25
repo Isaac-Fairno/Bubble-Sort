@@ -5,9 +5,12 @@ import random,time
 
 y = int(input("Enter a length of an array"))
 items = [random.randint(0,100) for x in range (y)]
-start = time.time()
+
 
 print(f"Original List of {y} numbers: {items}")
+
+start = time.time() #Starts the timeer now to only capture how long the actual sort takes, not all the other code before it
+
 n = len(items)-1
 
 swap = True
@@ -34,3 +37,4 @@ print(f"Time Taken: {speed}")
 
  
         
+
